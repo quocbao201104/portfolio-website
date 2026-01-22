@@ -44,7 +44,7 @@
           </div>
           <div class="flex flex-wrap gap-4">
             <a
-              v-if="featuredProject.liveUrl"
+              v-if="featuredProject.liveUrl && featuredProject.liveUrl.trim()"
               :href="featuredProject.liveUrl"
               target="_blank"
               rel="noopener noreferrer"
@@ -54,7 +54,7 @@
               <span>View Live Demo</span>
             </a>
             <a
-              v-if="featuredProject.githubUrl"
+              v-if="featuredProject.githubUrl && featuredProject.githubUrl.trim()"
               :href="featuredProject.githubUrl"
               target="_blank"
               rel="noopener noreferrer"
@@ -68,7 +68,7 @@
       </div>
 
       <!-- Other Projects -->
-      <div>
+      <div v-if="otherProjects.length > 0">
         <h3 class="text-2xl font-bold text-gray-100 mb-8">Other Projects</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <ProjectCard

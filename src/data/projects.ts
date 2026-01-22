@@ -25,7 +25,7 @@ export const projects: Project[] = [
       'Gamification: tasks, points & levels',
       'Admin dashboard & content approval'
     ],
-    liveUrl: '', // nếu chưa deploy thì để ''
+    // liveUrl: '', // Add when deployed
     githubUrl: 'https://github.com/quocbao201104/TruyenVietHay',
     featured: true
   }

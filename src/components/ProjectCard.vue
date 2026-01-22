@@ -28,7 +28,7 @@
     
     <div class="flex space-x-4">
       <a
-        v-if="project.liveUrl"
+        v-if="project.liveUrl && project.liveUrl.trim()"
         :href="project.liveUrl"
         target="_blank"
         rel="noopener noreferrer"
@@ -38,7 +38,7 @@
         <span class="text-sm">Live Demo</span>
       </a>
       <a
-        v-if="project.githubUrl"
+        v-if="project.githubUrl && project.githubUrl.trim()"
         :href="project.githubUrl"
         target="_blank"
         rel="noopener noreferrer"
