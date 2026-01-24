@@ -48,7 +48,7 @@
                   </div>
                   <div>
                     <div class="text-gray-400 text-sm">{{ link.name }}</div>
-                    <div class="text-gray-100 font-medium">{{ link.name }}</div>
+                    <div class="text-gray-100 font-medium">{{ link.display || link.name }}</div>
                   </div>
                 </a>
               </div>
@@ -133,7 +133,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { Mail, Send, Github, Linkedin, Twitter } from 'lucide-vue-next'
+import { Mail, Send, Github, Linkedin, Twitter, Phone } from 'lucide-vue-next'
 import SectionTitle from '@/components/SectionTitle.vue'
 import Button from '@/components/Button.vue'
 import { socialLinks, contactEmail } from '@/data/contact'
@@ -165,7 +165,8 @@ const getIcon = (iconName: string) => {
     github: Github,
     linkedin: Linkedin,
     mail: Mail,
-    twitter: Twitter
+    twitter: Twitter,
+    phone: Phone
   }
   return icons[iconName] || Mail
 }
