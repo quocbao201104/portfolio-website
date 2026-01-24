@@ -11,11 +11,11 @@ export const socialLinks: SocialLink[] = [
 //     url: 'https://www.linkedin.com/in/baodev1/',
 //     icon: 'linkedin'
 //   },
-  {
-    name: 'Email',
-    url: 'mailto:quocbao201104@gmail.com',
-    icon: 'mail'
-  },
+  // {
+  //   name: 'Email',
+  //   url: 'mailto:quocbao201104@gmail.com',
+  //   icon: 'mail'
+  // },
 //   {
 //     name: 'Twitter',
 //     url: 'https://twitter.com/yourusername',

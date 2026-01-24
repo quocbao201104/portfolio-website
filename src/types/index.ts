@@ -9,6 +9,7 @@ export interface Project {
   githubUrl?: string
   image?: string
   featured?: boolean
+  architecture?: string[]
 }
 
 export interface Skill {

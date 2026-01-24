@@ -3,18 +3,18 @@ import type { Experience } from '@/types'
 export const experiences: Experience[] = [
   {
     id: '1',
-    title: 'Full-stack Developer',
+    title: 'Backend Developer',
     company: 'Personal Project – TruyenVietHay',
     location: 'Remote',
     startDate: '2024-06',
     endDate: 'Present',
     type: 'work',
     description: [
-      'Developed a fullstack web application for online story reading using Vue 3 and Node.js',
+      'Architected and developed a robust backend system for online story reading using Node.js',
       'Designed and implemented RESTful APIs with Express and MySQL',
       'Implemented JWT authentication with role-based access (Admin / Author / User)',
-      'Built CRUD features with pagination for stories, chapters, comments, and users',
-      'Integrated reading features such as follow, like, reading history, and chapter navigation'
+      'Built scalable CRUD features with pagination for stories, chapters, comments, and users',
+      'Optimized database queries and API performance for reading features'
     ]
   },
   // {
@@ -44,7 +44,7 @@ export const experiences: Experience[] = [
       'Major in Information Technology',
       'Focused on web development, databases, and software engineering',
       'Self-studied backend development with Node.js and real-world projects',
-      'Built multiple personal projects to practice fullstack development'
+      'Built multiple personal projects to practice backend development'
     ]
   }
 ]

@@ -2,33 +2,69 @@ import type { Project } from '@/types'
 
 export const projects: Project[] = [
   {
-    id: '1',
-    name: 'TruyenVietHay – Online Story Reading Platform',
-    description: 'Full-stack web platform for reading and managing online stories',
-    longDescription:
-      'A full-stack web application that allows users to read, follow, and interact with stories, while authors can manage content and admins control moderation workflows. The system includes authentication, role-based access, reading history, and gamification features such as points, levels, and daily tasks.',
-    techStack: [
-      'Vue 3',
-      'TypeScript',
-      'Tailwind CSS',
-      'Node.js',
-      'Express',
-      'MySQL',
-      'JWT',
-      'Pinia'
-    ],
-    features: [
-      'Auth & RBAC (Admin / Author / User)',
-      'Story & Chapter CRUD + pagination',
-      'Reading history & chapter navigation',
-      'Follow, like & comment system',
-      'Gamification: tasks, points & levels',
-      'Admin dashboard & content approval'
-    ],
-    // liveUrl: '', // Add when deployed
-    githubUrl: 'https://github.com/quocbao201104/TruyenVietHay',
-    featured: true
-  }
+  id: '1',
+  name: 'TruyenVietHay – Online Story Reading Platform (Backend System)',
+  description: 'Scalable backend system for an online story reading platform',
+  longDescription:
+    'A production-oriented backend system powering an online story reading platform. It handles content management, user interactions, and administrative workflows with a focus on scalability, security, and performance.',
+  techStack: [
+    'Node.js',
+    'Express',
+    'MySQL',
+    'REST API',
+    'JWT',
+    'RBAC',
+    // 'PM2',
+    // 'Nginx'
+  ],
+  architecture: [
+    'MVC-based backend architecture',
+    'RESTful API design',
+    'Relational database schema design',
+    'Token-based authentication & authorization'
+  ],
+  features: [
+    'JWT authentication & role-based access control (Admin / Author / User)',
+    'Story & chapter management with pagination and approval workflow',
+    'Reading history & chapter navigation',
+    'Follow, like & comment system',
+    'Gamification system: tasks, points & user levels',
+    'Admin dashboard for content moderation'
+  ],
+  githubUrl: 'https://github.com/quocbao201104/TruyenVietHay',
+  featured: true
+  },
+  
+  {
+  id: '2',
+  name: 'Generic Content Ingestion Crawler (Node.js)',
+  description: 'A sequential crawler for ingesting and normalizing paginated content.',
+  longDescription:
+    'A backend engineering portfolio project demonstrating a complete content ingestion pipeline built with Node.js. \
+The system is designed to sequentially traverse paginated content sources, normalize unstructured HTML into clean text data, \
+and persist it into a relational database. The focus of the project is on architecture, data processing reliability, \
+and safe automation patterns rather than large-scale scraping.',
+  techStack: [
+    'Node.js',
+    'Axios',
+    'Cheerio',
+    'MySQL',
+    'Dotenv'
+  ],
+  architecture: [
+    'Crawler layer for controlled HTTP fetching',
+    'Parser layer for structured HTML normalization',
+    'DAO / Model layer for database persistence'
+  ],
+  features: [
+    'Sequential crawling with configurable delay',
+    'Duplicate detection via slug-based checks',
+    'Robust HTML-to-text normalization',
+    'Modular and extensible architecture'
+  ],
+  githubUrl: 'https://github.com/quocbao201104/nodejs-content-crawler',
+}
+
 ]
 
   // {

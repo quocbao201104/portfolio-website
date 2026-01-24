@@ -7,15 +7,15 @@
         <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
           <div class="space-y-6">
             <p class="text-lg text-gray-300 leading-relaxed">
-              I'm a passionate full-stack developer with a love for creating beautiful, 
-              functional web applications. My journey in software development started 
+              I'm a passionate backend developer with a love for building robust, 
+              scalable server-side applications. My journey in software engineering started 
               during my university years, and I've been continuously learning and growing ever since.
             </p>
             <p class="text-lg text-gray-300 leading-relaxed">
-              I specialize in modern JavaScript frameworks, particularly Vue.js and React, 
+              I specialize in scalable server-side systems, particularly Node.js and distributed architecture, 
               and I'm always exploring new technologies and best practices. I believe in 
-              writing clean, maintainable code and building applications that provide 
-              exceptional user experiences.
+              writing clean, efficient code and building APIs that provide 
+              exceptional performance and reliability.
             </p>
             <p class="text-lg text-gray-300 leading-relaxed">
               When I'm not coding, you can find me contributing to open-source projects, 
@@ -44,7 +44,7 @@
                 <Code class="text-primary-400 mt-1" :size="20" />
                 <div>
                   <div class="text-gray-100 font-medium">Focus</div>
-                  <div class="text-gray-400">Full-stack Web Development</div>
+                  <div class="text-gray-400">Backend System Architecture</div>
                 </div>
               </li>
               <li class="flex items-start space-x-3">

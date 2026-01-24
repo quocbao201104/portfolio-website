@@ -29,6 +29,21 @@
               {{ tech }}
             </span>
           </div>
+          
+          <div v-if="featuredProject.architecture" class="mb-6">
+            <h3 class="text-xl font-semibold text-gray-100 mb-3">System Architecture:</h3>
+            <ul class="grid md:grid-cols-2 gap-2">
+              <li
+                v-for="arch in featuredProject.architecture"
+                :key="arch"
+                class="flex items-start space-x-2 text-gray-300"
+              >
+                <Check class="text-primary-400 mt-1 flex-shrink-0" :size="18" />
+                <span>{{ arch }}</span>
+              </li>
+            </ul>
+          </div>
+
           <div class="mb-6">
             <h3 class="text-xl font-semibold text-gray-100 mb-3">Key Features:</h3>
             <ul class="grid md:grid-cols-2 gap-2">

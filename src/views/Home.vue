@@ -8,7 +8,7 @@
             Hi, I'm <span class="gradient-text">Quoc Bao</span>
           </h1>
           <p class="text-2xl md:text-3xl text-gray-400 mb-4">
-            Full-stack Developer
+            Backend Developer
           </p>
           <p class="text-lg text-gray-500 mb-8 max-w-2xl mx-auto">
             I build modern, scalable web applications with a focus on user experience and clean code.
@@ -31,15 +31,15 @@
       <div class="container-custom">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="text-center">
-            <div class="text-4xl font-bold gradient-text mb-2">1+</div>
+            <div class="text-4xl font-bold gradient-text mb-2">3+</div>
             <div class="text-gray-400">Projects Completed</div>
           </div>
           <div class="text-center">
-            <div class="text-4xl font-bold gradient-text mb-2">3+</div>
+            <div class="text-4xl font-bold gradient-text mb-2">2+</div>
             <div class="text-gray-400">Years Experience</div>
           </div>
           <div class="text-center">
-            <div class="text-4xl font-bold gradient-text mb-2">10+</div>
+            <div class="text-4xl font-bold gradient-text mb-2">5+</div>
             <div class="text-gray-400">Technologies Mastered</div>
           </div>
         </div>
@@ -50,12 +50,14 @@
     <section class="section-padding">
       <div class="container-custom">
         <SectionTitle title="Featured Projects" subtitle="Some of my recent work" />
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <ProjectCard
+        <div class="flex flex-wrap justify-center gap-6">
+          <div 
             v-for="project in featuredProjects"
             :key="project.id"
-            :project="project"
-          />
+            class="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
+          >
+            <ProjectCard :project="project" />
+          </div>
         </div>
         <div class="text-center mt-12">
           <Button to="/projects" variant="outline">

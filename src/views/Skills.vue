@@ -33,7 +33,7 @@ import { skills } from '@/data/skills'
 import type { Skill } from '@/types'
 
 const skillCategories = [
-  { name: 'Frontend', key: 'frontend', icon: Code },
+  // { name: 'Frontend', key: 'frontend', icon: Code },
   { name: 'Backend', key: 'backend', icon: Server },
   { name: 'Database', key: 'database', icon: Database },
   { name: 'Tools & Others', key: 'tools', icon: Wrench }
