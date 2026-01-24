@@ -26,7 +26,7 @@
 </template>
 
 <script setup lang="ts">
-import { Code, Server, Database, Wrench } from 'lucide-vue-next'
+import { Server, Database, Wrench } from 'lucide-vue-next'
 import SectionTitle from '@/components/SectionTitle.vue'
 import SkillCard from '@/components/SkillCard.vue'
 import { skills } from '@/data/skills'
