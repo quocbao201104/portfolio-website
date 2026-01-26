@@ -14,8 +14,9 @@ export const projects: Project[] = [
     'REST API',
     'JWT',
     'RBAC',
-    // 'PM2',
-    // 'Nginx'
+    'Aiven',
+    'Render',
+    'Cloudinary',
   ],
   architecture: [
     'MVC-based backend architecture',

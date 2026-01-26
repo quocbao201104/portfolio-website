@@ -26,11 +26,15 @@ export const skills: Skill[] = [
 //   { name: 'MongoDB', level: 'advanced', category: 'database' },
 //   { name: 'PostgreSQL', level: 'intermediate', category: 'database' },
   { name: 'MySQL', level: 'advanced', category: 'database' },
+  { name: 'Aiven', level: 'advanced', category: 'database' },
 //   { name: 'Redis', level: 'intermediate', category: 'database' },
   
   // Tools
   { name: 'Git', level: 'advanced', category: 'tools' },
   { name: 'Postman', level: 'advanced', category: 'tools' },
+  { name: 'Render', level: 'advanced', category: 'tools' },
+  { name: 'Cloudinary', level: 'advanced', category: 'tools' },
+  { name: 'Vercel', level: 'advanced', category: 'tools' },
 //   { name: 'Docker', level: 'intermediate', category: 'tools' },
 //   { name: 'AWS', level: 'intermediate', category: 'tools' },
   // { name: 'Vite', level: 'advanced', category: 'tools' },
