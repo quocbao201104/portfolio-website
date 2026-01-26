@@ -31,6 +31,7 @@ export const projects: Project[] = [
     'Gamification system: tasks, points & user levels',
     'Admin dashboard for content moderation'
   ],
+  liveUrl: 'https://truyen-viet-hay.vercel.app/',
   githubUrl: 'https://github.com/quocbao201104/TruyenVietHay',
   featured: true
   },
