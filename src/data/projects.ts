@@ -2,39 +2,41 @@ import type { Project } from '@/types'
 
 export const projects: Project[] = [
   {
-  id: '1',
-  name: 'TruyenVietHay – Online Story Reading Platform (Backend System)',
-  description: 'Scalable backend system for an online story reading platform',
-  longDescription:
-    'A production-oriented backend system powering an online story reading platform. It handles content management, user interactions, and administrative workflows with a focus on scalability, security, and performance.',
-  techStack: [
-    'Node.js',
-    'Express',
-    'MySQL',
-    'REST API',
-    'JWT',
-    'RBAC',
-    'Aiven',
-    'Render',
-    'Cloudinary',
-  ],
-  architecture: [
-    'MVC-based backend architecture',
-    'RESTful API design',
-    'Relational database schema design',
-    'Token-based authentication & authorization'
-  ],
-  features: [
-    'JWT authentication & role-based access control (Admin / Author / User)',
-    'Story & chapter management with pagination and approval workflow',
-    'Reading history & chapter navigation',
-    'Follow, like & comment system',
-    'Gamification system: tasks, points & user levels',
-    'Admin dashboard for content moderation'
-  ],
-  liveUrl: 'https://truyen-viet-hay.vercel.app/',
-  githubUrl: 'https://github.com/quocbao201104/TruyenVietHay',
-  featured: true
+    id: '1',
+    name: 'TruyenVietHay – Online Story Reading Platform',
+    description: 'A full-feature story platform with gamification and high-performance caching.',
+    longDescription:
+      'A robust backend system designed for a story reading platform. It features a complex gamification engine (Tasks, EXP, Currency), optimized content delivery via caching layers, and a secure Role-Based Access Control (RBAC) system. The project demonstrates advanced database query optimizations and API design patterns for scalability.',
+    techStack: [
+      'Node.js',
+      'Express',
+      'MySQL',
+      'Node-cache',
+      'REST API',
+      'JWT',
+      'RBAC',
+      'Cloudinary',
+      'Aiven',
+      'Render',
+    ],
+    architecture: [
+      'MVC-based architecture',
+      'Layered Caching Strategy (Node-cache)',
+      'RESTful API design',
+      'Relational database with Fulltext Search',
+      'Token-based authentication & authorization'
+    ],
+    features: [
+      'Gamification Engine: Logic for EXP calculation, automated daily tasks, and currency transactions',
+      'Performance Optimization: Implemented node-cache to reduce DB load for high-traffic endpoints (Rankings, Hot Stories)',
+      'Database Efficiency: Optimized SQL queries with Indexes and Fulltext Search for fast content retrieval',
+      'Content Delivery APIs: Efficient endpoints for chapter pagination, reading history, and detailed metadata',
+      'Security & Access: Fine-grained RBAC for Admins, Authors, and Users protected by JWT',
+      'Interaction System: Backend logic for flexible handling of comments, ratings, and follow lists',
+    ],
+    liveUrl: 'https://truyen-viet-hay.vercel.app/',
+    githubUrl: 'https://github.com/quocbao201104/TruyenVietHay.git',
+    featured: true
   },
   
   {
