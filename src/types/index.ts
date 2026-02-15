@@ -35,3 +35,13 @@ export interface SocialLink {
   icon: string
   display?: string
 }
+
+export interface PersonalInfo {
+  fullName: string
+  title: string
+  location: string
+  dateOfBirth?: string
+  yearsOfExperience: number
+  summary: string
+  languages: string[]
+}

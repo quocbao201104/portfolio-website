@@ -33,4 +33,109 @@
   .card-hover {
     @apply transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary-500/20;
   }
+
+  /* Glassmorphism Utilities */
+  .glass-card {
+    @apply bg-dark-900/60 backdrop-blur-md border border-white/5 rounded-xl shadow-xl;
+  }
+  
+  .glass-panel {
+    @apply bg-dark-900/80 backdrop-blur-xl border-r border-white/5 h-full;
+  }
+
+  /* Tech Accents */
+  .tech-border {
+    @apply relative border border-primary-500/30 overflow-hidden;
+  }
+  
+  .tech-border::before {
+    content: '';
+    @apply absolute top-0 left-0 w-1 h-full bg-primary-500 opacity-50;
+  }
+  
+  .tech-glow {
+    @apply shadow-[0_0_15px_rgba(34,197,94,0.1)];
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-950;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-dark-700 rounded-full hover:bg-dark-600 transition-colors;
+  }
 }
+
+/* Background Pattern */
+.bg-tech-pattern {
+  background-color: #030712;
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(34, 197, 94, 0.05) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(59, 130, 246, 0.05) 0px, transparent 50%),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 40px 40px, 40px 40px;
+}
+
+/* Print Styles for CV */
+@media print {
+  @page {
+    margin: 0.5in;
+    size: A4;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt;
+  }
+
+  /* Hide navigation and footer when printing */
+  header,
+  footer,
+  nav {
+    display: none !important;
+  }
+
+  /* Ensure main content takes full width */
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* Prevent page breaks inside important elements */
+  .project-item,
+  .timeline-item,
+  .skill-category,
+  section {
+    page-break-inside: avoid;
+  }
+
+  /* Remove transitions and animations */
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+
+  /* Ensure links are visible with their URLs */
+  a {
+    text-decoration: underline;
+    color: #374151 !important;
+  }
+
+  /* Make sure text is black for readability */
+  h1, h2, h3, h4, h5, h6, p, li, span {
+    color: black !important;
+  }
+}
+

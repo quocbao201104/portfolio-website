@@ -5,9 +5,10 @@ A modern, responsive portfolio website built with Vue 3, TypeScript, and Tailwin
 ## 🚀 Features
 
 - **Modern Tech Stack**: Vue 3 with Composition API, TypeScript, Vite
-- **Beautiful Design**: Dark mode first, clean and minimal UI
-- **Fully Responsive**: Works perfectly on mobile, tablet, and desktop
-- **Smooth Animations**: Subtle hover effects and transitions
+- **Tech Dashboard Design**: Split-layout authentic "developer" interface
+- **Glassmorphism**: Premium frosted glass effects
+- **Fully Responsive**: Optimized for desktop "dashboard" and mobile readability
+- **Smooth Animations**: "In-your-face" tech transitions and interactions
 - **SEO Optimized**: Meta tags and semantic HTML
 - **Fast Performance**: Optimized build with Vite
 
@@ -105,44 +106,36 @@ To change from green to another color (e.g., cyan or purple):
    ```
 
 ## 📦 Project Structure
-
-```
-CV/
-├── public/              # Static assets
-├── src/
-│   ├── components/      # Reusable Vue components
-│   │   ├── Header.vue
-│   │   ├── Footer.vue
-│   │   ├── Button.vue
-│   │   ├── ProjectCard.vue
-│   │   ├── SkillCard.vue
-│   │   └── SectionTitle.vue
-│   ├── data/           # Data files (projects, skills, etc.)
-│   │   ├── projects.ts
-│   │   ├── skills.ts
-│   │   ├── experience.ts
-│   │   └── contact.ts
-│   ├── router/         # Vue Router configuration
-│   │   └── index.ts
-│   ├── types/          # TypeScript type definitions
-│   │   └── index.ts
-│   ├── views/          # Page components
-│   │   ├── Home.vue
-│   │   ├── About.vue
-│   │   ├── Skills.vue
-│   │   ├── Projects.vue
-│   │   ├── Experience.vue
-│   │   └── Contact.vue
-│   ├── App.vue         # Root component
-│   ├── main.ts         # Application entry point
-│   └── style.css       # Global styles
-├── index.html
-├── package.json
-├── vite.config.ts
-├── tailwind.config.js
-├── tsconfig.json
-└── README.md
-```
+ 
+ ```
+ CV/
+ ├── public/              # Static assets (including resume.pdf)
+ ├── src/
+ ├── components/      # UI Components
+ │   ├── SideProfile.vue
+ │   └── SkillsGrid.vue
+ ├── data/           # Data files (projects, skills, etc.)
+ │   ├── projects.ts
+ │   ├── skills.ts
+ │   ├── experience.ts
+ │   ├── personal.ts
+ │   └── contact.ts
+ ├── router/         # Vue Router configuration
+ │   └── index.ts
+ ├── types/          # TypeScript type definitions
+ │   └── index.ts
+ ├── views/          # Page components
+ │   └── Home.vue        # Main Dashboard
+ ├── App.vue         # Root component
+ ├── main.ts         # Application entry point
+ └── style.css       # Global styles (Tailwind + Custom)
+ ├── index.html
+ ├── package.json
+ ├── vite.config.ts
+ ├── tailwind.config.js
+ ├── tsconfig.json
+ └── README.md
+ ```
 
 ## 🚢 Deployment
 

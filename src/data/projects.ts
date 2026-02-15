@@ -18,6 +18,7 @@ export const projects: Project[] = [
       'Cloudinary',
       'Aiven',
       'Render',
+      'Test Accounts for HR: baodevnode(user) - baodev(author) - baodev1(admin) (password: 123456)', 
     ],
     architecture: [
       'MVC-based architecture',
@@ -32,7 +33,7 @@ export const projects: Project[] = [
       'Database Efficiency: Optimized SQL queries with Indexes and Fulltext Search for fast content retrieval',
       'Content Delivery APIs: Efficient endpoints for chapter pagination, reading history, and detailed metadata',
       'Security & Access: Fine-grained RBAC for Admins, Authors, and Users protected by JWT',
-      'Interaction System: Backend logic for flexible handling of comments, ratings, and follow lists',
+      'Interaction System: Backend logic for flexible handling of comments, ratings, and follow lists ',
     ],
     liveUrl: 'https://truyen-viet-hay.vercel.app/',
     githubUrl: 'https://github.com/quocbao201104/TruyenVietHay.git',

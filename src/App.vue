@@ -1,6 +1,5 @@
 <template>
   <div id="app" class="min-h-screen">
-    <Header />
     <main>
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
@@ -13,7 +12,6 @@
 </template>
 
 <script setup lang="ts">
-import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
 </script>
 
