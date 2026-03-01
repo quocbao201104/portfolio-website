@@ -5,8 +5,6 @@ export const projects: Project[] = [
     id: '1',
     name: 'TruyenVietHay – Online Story Reading Platform',
     description: 'A full-feature story platform with gamification and high-performance caching.',
-    longDescription:
-      'A robust backend system designed for a story reading platform. It features a complex gamification engine (Tasks, EXP, Currency), optimized content delivery via caching layers, and a secure Role-Based Access Control (RBAC) system. The project demonstrates advanced database query optimizations and API design patterns for scalability.',
     techStack: [
       'Node.js',
       'Express',
@@ -36,19 +34,13 @@ export const projects: Project[] = [
       'Interaction System: Backend logic for flexible handling of comments, ratings, and follow lists ',
     ],
     liveUrl: 'https://truyen-viet-hay.vercel.app/',
-    githubUrl: 'https://github.com/quocbao201104/TruyenVietHay.git',
-    featured: true
+    githubUrl: 'https://github.com/quocbao201104/TruyenVietHay.git'
   },
   
   {
   id: '2',
   name: 'Generic Content Ingestion Crawler (Node.js)',
   description: 'A sequential crawler for ingesting and normalizing paginated content.',
-  longDescription:
-    'A backend engineering portfolio project demonstrating a complete content ingestion pipeline built with Node.js. \
-The system is designed to sequentially traverse paginated content sources, normalize unstructured HTML into clean text data, \
-and persist it into a relational database. The focus of the project is on architecture, data processing reliability, \
-and safe automation patterns rather than large-scale scraping.',
   techStack: [
     'Node.js',
     'Axios',
@@ -68,56 +60,5 @@ and safe automation patterns rather than large-scale scraping.',
     'Modular and extensible architecture'
   ],
   githubUrl: 'https://github.com/quocbao201104/nodejs-content-crawler',
-}
-
+  }
 ]
-
-  // {
-  //   id: '2',
-  //   name: 'Task Management App',
-  //   description: 'Collaborative task management with real-time updates',
-  //   longDescription: 'A real-time collaborative task management application that helps teams organize and track their work efficiently.',
-  //   techStack: ['Vue 3', 'TypeScript', 'Socket.io', 'Node.js', 'PostgreSQL'],
-  //   features: [
-  //     'Real-time collaboration',
-  //     'Task assignments & due dates',
-  //     'Project boards & kanban view',
-  //     'Team member management',
-  //     'Activity timeline'
-  //   ],
-  //   liveUrl: 'https://example.com',
-  //   githubUrl: 'https://github.com/yourusername/taskapp'
-  // },
-  // {
-  //   id: '3',
-  //   name: 'Weather Dashboard',
-  //   description: 'Beautiful weather app with location-based forecasts',
-  //   longDescription: 'A responsive weather dashboard that provides detailed forecasts, weather maps, and location-based weather information.',
-  //   techStack: ['Vue 3', 'TypeScript', 'OpenWeather API', 'Chart.js'],
-  //   features: [
-  //     'Current weather & forecasts',
-  //     'Interactive weather maps',
-  //     'Location-based search',
-  //     'Weather charts & graphs',
-  //     'Dark/light theme'
-  //   ],
-  //   liveUrl: 'https://example.com',
-  //   githubUrl: 'https://github.com/yourusername/weather'
-  // },
-  // {
-  //   id: '4',
-  //   name: 'Blog Platform',
-  //   description: 'Modern blog platform with markdown support',
-  //   longDescription: 'A full-featured blog platform with markdown editor, syntax highlighting, and content management capabilities.',
-  //   techStack: ['Vue 3', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'Marked'],
-  //   features: [
-  //     'Markdown editor',
-  //     'Syntax highlighting',
-  //     'Tag & category system',
-  //     'Comment system',
-  //     'SEO optimization',
-  //     'RSS feed'
-  //   ],
-  //   liveUrl: 'https://example.com',
-  //   githubUrl: 'https://github.com/yourusername/blog'
-  // }

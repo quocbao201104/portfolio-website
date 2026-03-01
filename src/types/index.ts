@@ -2,13 +2,10 @@ export interface Project {
   id: string
   name: string
   description: string
-  longDescription: string
   techStack: string[]
   features: string[]
   liveUrl?: string
   githubUrl?: string
-  image?: string
-  featured?: boolean
   architecture?: string[]
 }
 
@@ -22,11 +19,9 @@ export interface Experience {
   id: string
   title: string
   company: string
-  location: string
   startDate: string
   endDate: string | 'Present'
   description: string[]
-  type: 'work' | 'education'
 }
 
 export interface SocialLink {

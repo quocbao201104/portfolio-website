@@ -60,9 +60,11 @@
       <h3 class="text-xs font-bold text-gray-500 uppercase tracking-wider mb-4">Core Tech</h3>
       <div class="flex flex-wrap gap-2">
         <span class="px-3 py-1 bg-dark-800 border border-gray-700 rounded text-xs text-gray-300 font-mono">Node.js</span>
-        <span class="px-3 py-1 bg-dark-800 border border-gray-700 rounded text-xs text-gray-300 font-mono">TypeScript</span>
-        <span class="px-3 py-1 bg-dark-800 border border-gray-700 rounded text-xs text-gray-300 font-mono">MySQL</span>
-        <span class="px-3 py-1 bg-dark-800 border border-gray-700 rounded text-xs text-gray-300 font-mono">AWS</span>
+        <span class="px-3 py-1 bg-dark-800 border border-gray-700 rounded text-xs text-gray-300 font-mono">Express</span>
+        <span class="px-3 py-1 bg-dark-800 border border-gray-700 rounded text-xs text-gray-300 font-mono">MySQL(Aiven)</span>
+        <span class="px-3 py-1 bg-dark-800 border border-gray-700 rounded text-xs text-gray-300 font-mono">JWT & RBAC</span>
+        <span class="px-3 py-1 bg-dark-800 border border-gray-700 rounded text-xs text-gray-300 font-mono">Cloudinary</span>
+        <span class="px-3 py-1 bg-dark-800 border border-gray-700 rounded text-xs text-gray-300 font-mono">Node-cache</span>
       </div>
       
       <div class="mt-8 pt-8 border-t border-gray-800 text-center">
